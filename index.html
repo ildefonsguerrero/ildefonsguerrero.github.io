@@ -14,6 +14,21 @@
       content="Abogado en Girona ofrece asistencia jurídica. Contacte con Ildefons Guerrero para cualquier necesidad"
     />
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+    <!-- variables para scripts -->
+    <script type="text/javascript">
+      var relativeURL = "",
+        dispositivo = "pc",
+        firstvisit = false,
+        recaptchaSiteKey = "";
+    </script>
+
+    <!-- CSS's -->
+    <link href="css/general.css" rel="stylesheet" type="text/css" />
+    <link href="css/webobject.css" rel="stylesheet" type="text/css" />
+    <link href="css/cache_master.css" rel="stylesheet" type="text/css" />
+    <link href="css/cache_pc.css" rel="stylesheet" type="text/css" />
+
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
@@ -56,43 +71,31 @@
       property="og:description"
       content="Nuestro despacho de abogados en Girona desarrolla una Asistencia Jurídica completa. Llámenos 935182121, 1ª Visita GRATUITA"
     />
-
-    <!-- CSS's -->
-    <link href="css/general.css" rel="stylesheet" type="text/css" />
-    <link href="css/webobject.css" rel="stylesheet" type="text/css" />
-    <link href="css/cache_master.css" rel="stylesheet" type="text/css" />
-    <link href="css/cache_pc.css" rel="stylesheet" type="text/css" />
+    <!-- Social media icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <div id="site" class="site page_64">
-      <!-- Google Tag Manager (noscript) -->
-      <noscript
-        ><iframe
-          src="https://www.googletagmanager.com/ns.html?id=GTM-5C7XZMT"
-          height="0"
-          width="0"
-          style="display: none; visibility: hidden"
-        ></iframe>
-      </noscript>
-      <!-- End Google Tag Manager (noscript) -->
-
       <div class="top_bar">
         <div id="bar_content">
           <ul class="social_top">
             <li>
               <a href="https://www.facebook.com/" rel="nofollow" target="_blank"
-                >Facebook</a
-              >
+                ><i class="fa fa-facebook"></i
+              ></a>
             </li>
             <li>
-              <a href="https://twitter.com/" rel="nofollow" target="_blank"
-                >· Twitter</a
-              >
+              <a href="https://www.twitter.com/" rel="nofollow" target="_blank"
+                ><i class="fa fa-twitter"></i
+              ></a>
             </li>
             <li>
               <a href="https://www.linkedin.com/" rel="nofollow" target="_blank"
-                >· LinkedIn</a
-              >
+                ><i class="fa fa-linkedin"></i
+              ></a>
             </li>
           </ul>
         </div>
@@ -353,7 +356,7 @@
                     >
                       <div class="mod_picturebox_picture">
                         <img
-                          src="img/genericas/abogado-ildefonso.jpg"
+                          src="img/genericas/open.jpg"
                           alt="abogado girona"
                           title="Ildefons Guerrero"
                         />
@@ -379,7 +382,7 @@
                         <div
                           class="mod_featuregallery_picture"
                           style="
-                            background-image: url('img/divorcio.jpg');
+                            background-image: url('img/index/business-meeting-in-office-for-team.jpg');
                             background-position: center -3px;
                           "
                         >
@@ -399,7 +402,7 @@
                         <div
                           class="mod_featuregallery_picture"
                           style="
-                            background-image: url('img/divorcio.jpg');
+                            background-image: url('img/index/woman-taking-notes-during-team-meeting.jpg');
                             background-position: -41px 0px;
                           "
                         >
@@ -419,7 +422,7 @@
                         <div
                           class="mod_featuregallery_picture"
                           style="
-                            background-image: url('img/abogados_derecho_mercantil_barcelona.jpg');
+                            background-image: url('img/index/criminal-appeals-page-in-law-book.jpg');
                             background-position: -46px 0px;
                           "
                         >
@@ -1564,7 +1567,8 @@
                             class="mod_mailform_field"
                           >
                             <div class="mod_mailform_label">
-                              Email<span class="mod_mailform_mandatorystar"
+                              Correo electrónico<span
+                                class="mod_mailform_mandatorystar"
                                 >*</span
                               >
                             </div>
@@ -1604,7 +1608,7 @@
                             <div class="mod_mailform_label">
                               <span class="mod_mailform_mandatorystar">*</span>
                               <span class="mod_mailform_mandatoryinfo"
-                                >obligatorio</span
+                                >Obligatorio</span
                               >
                             </div>
                             <div class="mod_mailform_control">
@@ -1704,175 +1708,8 @@
           rel="stylesheet"
           type="text/css"
         />
+
         <link rel="stylesheet" href="css/css_comprimidos.css" />
-
-        <script type="text/javascript" src="/js/scripts.min.js"></script>
-        <script type="text/javascript">
-          $(document).ready(function () {
-            $(window).scroll(function () {
-              if ($(this).scrollTop() > 100) {
-                $(".scrollup").fadeIn();
-              } else {
-                $(".scrollup").fadeOut();
-              }
-            });
-
-            $(".scrollup").click(function () {
-              $("html, body").animate({ scrollTop: 0 }, 600);
-              return false;
-            });
-
-            $(".responsive").slick({
-              dots: true,
-              infinite: true,
-              speed: 600,
-              slidesToShow: 3,
-              slidesToScroll: 1,
-              responsive: [
-                {
-                  breakpoint: 1700,
-                  settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
-                    infinite: true,
-                    dots: true,
-                  },
-                },
-                {
-                  breakpoint: 1300,
-                  settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
-                  },
-                },
-                {
-                  breakpoint: 970,
-                  settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                  },
-                },
-              ],
-            });
-
-            $(".responsive_1").slick({
-              dots: true,
-              slide: "li",
-              infinite: true,
-              speed: 600,
-              slidesToShow: 4,
-              slidesToScroll: 1,
-              responsive: [
-                {
-                  breakpoint: 1400,
-                  settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    dots: true,
-                  },
-                },
-                {
-                  breakpoint: 1200,
-                  settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                  },
-                },
-                {
-                  breakpoint: 970,
-                  settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                  },
-                },
-              ],
-            });
-
-            $(".responsive_2").slick({
-              dots: true,
-              slide: "li",
-              infinite: false,
-              speed: 600,
-              slidesToShow: 2,
-              slidesToScroll: 1,
-              responsive: [
-                {
-                  breakpoint: 1700,
-                  settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    dots: true,
-                  },
-                },
-                {
-                  breakpoint: 1300,
-                  settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                  },
-                },
-                {
-                  breakpoint: 970,
-                  settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                  },
-                },
-              ],
-            });
-
-            $(".noticias_m").slick({
-              dots: true,
-              vertical: true,
-              slide: "li",
-              infinite: false,
-              speed: 600,
-              slidesToShow: 2,
-              slidesToScroll: 1,
-            });
-
-            $(".news_sidebar_3").slick({
-              dots: true,
-              vertical: true,
-              slide: "li",
-              infinite: false,
-              speed: 600,
-              slidesToShow: 3,
-              slidesToScroll: 1,
-            });
-
-            $(".news_sidebar_2").slick({
-              dots: true,
-              vertical: true,
-              slide: "li",
-              infinite: false,
-              speed: 600,
-              slidesToShow: 2,
-              slidesToScroll: 1,
-            });
-
-            $(".news_sidebar_1").slick({
-              dots: true,
-              vertical: true,
-              slide: "li",
-              infinite: false,
-              speed: 600,
-              slidesToShow: 1,
-              slidesToScroll: 1,
-            });
-
-            $(".condiciones").fancybox();
-            $(".newsletter").fancybox();
-          });
-        </script>
-        <script type="text/javascript" src="/js/concat.js"></script>
-        <script
-          async="async"
-          type="text/javascript"
-          src="js/webobjectjs.js"
-        ></script>
       </div>
       <div id="cookie-message"></div>
       <div id="cookie-message-content">
@@ -1884,5 +1721,10 @@
         <div id="cookie-message-close">Aceptar</div>
       </div>
     </div>
+
+    <!-- scripts -->
+    <script type="text/javascript" src="js/concat.js"></script>
+    <script type="text/javascript" src="js/scripts.min.js"></script>
+    <script type="text/javascript" src="js/responsive.js"></script>
   </body>
 </html>

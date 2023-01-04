@@ -70,7 +70,8 @@ video#bgvid {
 }
 .social_top li {
   float: left;
-  margin-left: 6px;
+  margin-left: 32px;
+  font-size: 20px;
 }
 .social_top a {
   color: #fff;
@@ -1001,13 +1002,14 @@ b {
   line-height: 200%;
   font-weight: 600;
   margin-bottom: 0;
-  padding: 0;
+  padding: 6px;
   text-align: left;
 }
 .parallax .mod_mailform_label {
   color: #000;
-  font-weight: 400;
-  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 20px;
+  /* text-transform: uppercase; */
   letter-spacing: 0.5px;
 }
 .mod_mailform_control {
@@ -1091,7 +1093,7 @@ b {
 .mod_slideshow_singlepicture img {
   margin: 0;
   width: 100%;
-  max-height: 350px;
+  max-height: 300px;
 }
 .img_contacto .mod_picturebox_picture {
   background-position: 50% 50%;
@@ -1659,7 +1661,7 @@ b {
 .mod_slideshow {
   min-height: 50px;
   height: auto;
-  background: url(/sL6Wdd/theme/preloader_grey.gif) center center no-repeat #fff;
+  background: url(../img/varios/loader.gif) center center no-repeat #fff;
   background-size: 50px;
   width: 100%;
   position: relative;
@@ -2163,9 +2165,9 @@ b {
   color: #fff;
 }
 .feature_home .mod_featuregallery_link a {
-  background-image: url(../theme/imago.png);
+  background-image: url(../img/genericas/pulsa-mano.png);
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: 50% 30%;
   opacity: 0;
 }
 .feature_home .mod_featuregallery_link a:hover {
