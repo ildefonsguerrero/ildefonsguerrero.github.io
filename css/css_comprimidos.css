@@ -280,7 +280,7 @@
   width: 22px;
   background: #3f3f3f;
 }
-#menu_phone,
+#menu_peque,
 .no_slick {
   display: none;
 }
@@ -304,7 +304,7 @@
     width: 750px;
     padding: 0 !important;
   }
-  #menu_phone {
+  #menu_peque {
     display: none !important;
   }
 }
@@ -346,8 +346,8 @@
   .navbar-toggle {
     display: block;
   }
-  #menu_pc,
-  #menu_phone {
+  #menu_grande,
+  #menu_peque {
     display: none;
   }
   .slick {
@@ -372,32 +372,6 @@
   .blog > li:nth-child(9) {
     width: 100% !important;
     margin-left: 5px !important;
-  }
-  .page_194 h1 {
-    background-image: none;
-    background-repeat: no-repeat;
-    background-size: 10%;
-    padding-bottom: 0;
-    padding-top: 0;
-    background-position: 0 12%;
-    padding-left: 0;
-  }
-  .page_197 h1,
-  .page_199 h1,
-  .page_201 h1,
-  .page_202 h1,
-  .page_203 h1,
-  .page_205 h1,
-  .page_206 h1,
-  .page_207 h1,
-  .page_208 h1 {
-    background-image: none;
-    background-repeat: no-repeat;
-    background-size: 7%;
-    padding-bottom: 0;
-    padding-top: 0;
-    background-position: 0 24%;
-    padding-left: 0;
   }
   .feature_home {
     margin-top: 10px !important;
@@ -425,18 +399,5 @@
     margin: 20px 0;
     text-align: left;
     padding-left: 0%;
-  }
-  .phone_buttons .cms_featuregallery_placeholder,
-  .phone_buttons .mod_featuregallery_feature {
-    display: inline-block;
-    zoom: 1;
-    width: 27% !important;
-    vertical-align: top;
-    text-align: center;
-    margin: 0 0 10px;
-    background-color: #f0f0f0;
-    padding-bottom: 10px;
-    padding-top: 0;
-    margin-top: 0 !important;
   }
 }

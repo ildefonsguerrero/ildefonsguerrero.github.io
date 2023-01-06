@@ -1,3 +1,222 @@
+/* Limpiamos los atributos  */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+:focus {
+  outline: 0;
+}
+body {
+  line-height: 1;
+  color: black;
+  background: white;
+}
+ol,
+ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+}
+blockquote,
+q {
+  quotes: "" "";
+}
+
+/* secciones del doc */
+
+.website_sectioncontent {
+  clear: both;
+}
+.website_clearfix {
+  height: 0px;
+  font-size: 0;
+  clear: both;
+}
+.website_columntwothirds {
+  float: left;
+  width: 66.66666666666%;
+}
+.website_halfcolumn {
+  float: left;
+  width: 50%;
+}
+.website_columnsmall {
+  float: left;
+  width: 33.3%;
+}
+.website_columnbig {
+  float: left;
+  width: 66.6%;
+}
+.website_columntriplet {
+  float: left;
+  width: 33.3%;
+}
+
+/* campos del formulario */
+
+.cms_formfields_input {
+  border: 1px solid #ccc;
+  margin: 0;
+  padding: 0px 4px;
+  height: 20px;
+  line-height: 20px;
+  background-color: #fff;
+}
+.cms_formfields_url {
+  display: block;
+  float: left;
+  margin-top: 3px;
+}
+.cms_formfields_textarea {
+  border: 1px solid #ccc;
+  margin: 5px 0;
+  padding: 2px 4px;
+  resize: none;
+  font-size: 11px;
+  background-color: #fff;
+}
+.nicEdit-cms_formfields_richtext {
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  line-height: 18px;
+  padding: 2px 4px;
+}
+.cms_formcontrol .CodeMirror {
+  border: 1px solid #ccc;
+}
+
+/* menús */
+
+.website_headernavigationmenu .haschildren ul {
+  display: none;
+}
+.website_menubase {
+  position: relative;
+}
+.website_menubase ul {
+  z-index: 800;
+}
+
+/* cookies */
+#cookie-message,
+#cookie-message-content {
+  display: none;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 30px;
+}
+#cookie-message {
+  background: #000;
+  opacity: 0.6;
+  z-index: 800;
+}
+#cookie-message-content {
+  color: #ffffff;
+  font-family: helvetica;
+  font-size: 12px;
+  font-weight: 300;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  z-index: 801;
+}
+#cookie-message-more {
+  color: #32c3ef;
+  margin: 0 10px;
+}
+#cookie-message-close {
+  background: none repeat scroll 0 0 #ffffff;
+  border-radius: 2px 2px 2px 2px;
+  color: #000000;
+  cursor: pointer;
+  display: inline;
+  margin-left: 5px;
+  padding: 3px 15px;
+}
+
 .parallax,
 body,
 html,
@@ -15,22 +234,6 @@ h3 {
 }
 .subtitulo h2 {
   color: red;
-}
-video#bgvid {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -100;
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  background: url(banner_1.jpg) no-repeat;
-  background-size: cover;
 }
 .parallax {
   background-attachment: fixed;
@@ -92,12 +295,8 @@ video#bgvid {
 .mod_featuregallery_title a,
 .mod_link a,
 .mod_picturebox_picture,
-.mod_picturegallery a,
-.mod_picturegallery a:before,
 .regresar a div,
-.sect_title .mod_featuregallery_link a,
 .siguenos_top a,
-.sp_link a,
 .contenido_arriba,
 .welcome_side:before {
   -webkit-transition: all 0.7s ease-in-out;
@@ -169,20 +368,6 @@ a {
 }
 .website_module {
   min-height: 10px;
-}
-.scrollup {
-  background: url(/theme/arrow_top.png) center center no-repeat;
-  bottom: 50px;
-  height: 60px;
-  width: 60px;
-  opacity: 0.4;
-  position: fixed;
-  right: 5%;
-  text-indent: -9999px;
-  display: none;
-}
-.scrollup:hover {
-  opacity: 1;
 }
 .gototop {
   transform: rotate(180deg);
@@ -589,60 +774,6 @@ h3 {
 .website_columnbig .sub_title h2 {
   text-align: left;
 }
-.page_194 h1 {
-  background-image: url(../theme/nosotros.png);
-  background-repeat: no-repeat;
-  background-size: 10%;
-  padding-bottom: 40px;
-  padding-top: 20px;
-  background-position: 0 12%;
-  padding-left: 70px;
-}
-.page_197 h1,
-.page_199 h1,
-.page_201 h1,
-.page_202 h1,
-.page_203 h1,
-.page_205 h1,
-.page_206 h1,
-.page_207 h1,
-.page_208 h1 {
-  background-repeat: no-repeat;
-  background-size: 7%;
-  padding-bottom: 40px;
-  padding-top: 20px;
-  background-position: 0 24%;
-  padding-left: 59px;
-}
-.page_197 h1 {
-  background-image: url(../theme/derecho_penal.png);
-  text-transform: uppercase;
-  font-size: 32px;
-}
-.page_199 h1 {
-  background-image: url(../theme/clausulas_suelo.png);
-}
-.page_201 h1 {
-  background-image: url(../theme/derejcho_civil.png);
-}
-.page_202 h1 {
-  background-image: url(../theme/divorcios.png);
-}
-.page_203 h1 {
-  background-image: url(../theme/preferentes.png);
-}
-.page_205 h1 {
-  background-image: url(../theme/derecho_laboral.png);
-}
-.page_206 h1 {
-  background-image: url(../theme/derecho_extranjeria.png);
-}
-.page_207 h1 {
-  background-image: url(../theme/derecho_sociedades.png);
-}
-.page_208 h1 {
-  background-image: url(../theme/derecho_internacional.png);
-}
 .gallery_section .mod_title h3 {
   padding-top: 10px;
   border-bottom: 1px dotted #3f3f3f;
@@ -870,41 +1001,6 @@ b {
   color: #e2007a;
   background-color: #fff;
 }
-.pdf_link {
-  text-align: left;
-}
-.pdf_link a {
-  background: url(/theme/pdf.png) no-repeat;
-  display: block;
-  height: 31px;
-  padding: 9px 0 0 40px;
-}
-.sp_link {
-  margin: 10px 0 0;
-  width: 230px;
-}
-.sp_link a {
-  text-align: center;
-  color: #fff;
-  padding: 5px 0;
-  border-radius: 5px;
-  background: url(/theme/bg_button.jpg) center top;
-  font-size: 85%;
-  text-transform: uppercase;
-  font-weight: 300;
-}
-.sp_link a:hover {
-  background-position: center bottom;
-  color: grey;
-}
-.colored .sp_link a {
-  background: url(/theme/bg_button_colored.jpg);
-  color: #fff;
-}
-.colored .sp_link a:hover {
-  background-position: center bottom;
-  color: #2b2723;
-}
 .regresar {
   margin: 20px auto 0;
 }
@@ -966,6 +1062,8 @@ b {
   padding: 3px 0;
   line-height: 20px;
   width: 100%;
+  position: relative;
+  overflow: hidden;
 }
 .mod_mailform .cms_formfields_input,
 .mod_mailform .cms_formfields_textarea {
@@ -1105,73 +1203,19 @@ b {
   background-size: cover;
   height: 340px;
 }
-.mod_picturegallery {
-  overflow: hidden;
-  height: 100%;
-}
-.mod_picturegallery > a,
-.mod_picturegallery > div {
-  background-size: 100% auto;
-  float: left;
-  height: 170px;
-  line-height: 100%;
-  margin: 0;
-  width: 33.33%;
-}
-.mod_picturegallery a:hover {
-  background-size: 110%;
-}
-.mod_picturegallery a:before {
-  background: url(/theme/lupa.png) 50% 95% no-repeat rgba(132, 189, 50, 0.8);
-  display: block;
-  height: 170px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: 9;
-  content: "";
-  pointer-events: none;
-  opacity: 0;
-}
-.mod_picturegallery a:hover:before {
-  opacity: 1;
-  background-position: 50% 50%;
-}
 .mod_featuregallery_picture,
 .responsive_1 .mod_featuregallery_picture {
   background-position: 50% 50% !important;
   background-size: cover;
   background-repeat: no-repeat;
 }
-.gallery_section .mod_picturegallery {
-  height: 170px;
-  overflow: hidden;
-}
-.gallery_section .mod_picturegallery > a,
-.gallery_section .mod_picturegallery > div {
-  margin: 0;
-  width: 100%;
-}
-.gallery_section .cms_module_editmode .mod_picturegallery {
-  overflow: visible;
-  height: 100%;
-}
-.gallery_section .mod_picturegallery a {
-  display: none;
-}
-.gallery_section .mod_picturegallery a:first-child {
-  display: block;
-}
-.website_columnsmall .mod_picturegallery > a,
-.website_columnsmall .mod_picturegallery > div {
-  width: 31.7%;
-}
-.fancybox-lock {
-  overflow: visible !important;
-}
 .mod_featuregallery {
   text-align: center;
+  overflow: hidden;
+}
+.mod_mailform_error,
+.mod_mailform_error div {
+  display: none;
 }
 .cms_featuregallery_placeholder,
 .mod_featuregallery_feature {
@@ -1181,6 +1225,7 @@ b {
   vertical-align: top;
   text-align: center;
   margin: 0 10px 10px;
+  position: relative;
 }
 .website_columnbig .cms_featuregallery_placeholder,
 .website_columnbig .mod_featuregallery_feature {
@@ -1233,9 +1278,6 @@ b {
 }
 .servicios .mod_featuregallery_title > a {
   color: #000;
-}
-.mod_featuregallery_pages {
-  display: none;
 }
 .f_3_items .cms_featuregallery_placeholder,
 .f_3_items .mod_featuregallery_feature {
@@ -1315,13 +1357,7 @@ b {
   width: 29% !important;
   margin-left: 5px !important;
 }
-.blog .mod_featuregallery_picture {
-  width: 100%;
-  margin-bottom: 10px;
-  background-position: 50% top !important;
-  background-size: 80%;
-  height: 120px;
-}
+
 .blog .mod_featuregallery_text {
   text-align: center;
   width: 80%;
@@ -1479,7 +1515,6 @@ b {
   top: 30%;
   text-shadow: 1px 1px 0 #000;
 }
-.nivo-caption,
 .sub_slide {
   text-shadow: 1px 1px 1px #000;
 }
@@ -1517,55 +1552,6 @@ b {
 .news_blog {
   padding: 0;
   margin-top: 40px;
-}
-.sect_title {
-  margin-bottom: 0;
-}
-.sect_title .mod_featuregallery_feature {
-  border-bottom: 1px solid #e4e4e4;
-  margin: 0;
-  padding-bottom: 20px;
-  text-transform: uppercase;
-  width: 93%;
-}
-.sect_title .mod_featuregallery_title {
-  color: #000;
-  font-size: 200%;
-  margin: 3px 0 0;
-  text-align: center;
-}
-.sect_title .mod_featuregallery_title a {
-  color: #1d1d1d;
-}
-.sect_title .mod_featuregallery_link {
-  float: right;
-  font-size: 90%;
-  margin: 0;
-}
-.sect_title .mod_featuregallery_link a {
-  background: url(/theme/bg_button.jpg) center bottom;
-  color: #3a3530;
-  border-radius: 5px;
-  padding: 3px 20px;
-}
-.sect_title .mod_featuregallery_link:hover a {
-  background-position: center top;
-  color: #e71424;
-}
-.colored .sect_title .mod_featuregallery_feature {
-  border-bottom: 1px dotted #fff;
-}
-.colored .sect_title .mod_featuregallery_title,
-.colored .sect_title .mod_featuregallery_title a {
-  color: #fff;
-}
-.colored .sect_title .mod_featuregallery_link a {
-  background: url(/theme/bg_button_colored.jpg) center top;
-  color: #fff;
-}
-.colored .sect_title .mod_featuregallery_link:hover a {
-  background-position: center bottom;
-  color: #2b2723;
 }
 .website_columnfullsize .logos_feature {
   position: relative;
@@ -1628,20 +1614,6 @@ b {
 .website_columnbig .mod_slideshow {
   margin-bottom: 15px;
 }
-.nivo-caption {
-  width: 60%;
-  height: 200px;
-  background: rgba(177, 79, 151, 0);
-  top: 20%;
-  left: 20%;
-  padding: 40px 0 0;
-  opacity: 1;
-  z-index: 10;
-  text-align: CENTER;
-  font-size: 37px;
-  margin: 0 auto;
-  border-radius: 7px;
-}
 .sub_slide {
   margin-top: 24px;
   font-size: 26px;
@@ -1703,45 +1675,8 @@ b {
 .caption_link:hover {
   background-color: #e2007a;
 }
-.nivo-nextNav::before,
-.nivo-prevNav::before {
-  background: url(/theme/arrow_2.png) center center no-repeat rgba(0, 0, 0, 0);
-  content: "";
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-.nivo-prevNav::before {
-  background: url(/theme/arrow_1.png) center center no-repeat rgba(0, 0, 0, 0);
-}
 #cms_slideshowedit_caption {
   height: 100% !important;
-}
-.nivo-directionNav a {
-  cursor: pointer;
-  position: absolute;
-  top: 33%;
-  z-index: 10;
-  width: 40px;
-  height: 130px;
-  background: #4a4b4b;
-}
-.nivo-directionNav a:hover {
-  background: #216189;
-}
-.nivo-prevNav {
-  left: -40px;
-}
-.mod_slideshow:hover .nivo-prevNav {
-  left: 0;
-}
-.nivo-nextNav {
-  right: -40px;
-}
-.mod_slideshow:hover .nivo-nextNav {
-  right: 0;
 }
 .noticias .mod_featuregallery_title a {
   font-size: 15px;
@@ -1774,28 +1709,6 @@ b {
 }
 .banner_shop img {
   width: 100%;
-}
-.page_211 .cms_featuregallery_placeholder,
-.page_211 .mod_featuregallery_feature {
-  margin-bottom: 30px !important;
-  border-bottom: 1px dotted #ccc;
-  padding-bottom: 20px;
-  width: 100%;
-}
-.page_211 .mod_featuregallery_title {
-  width: 75%;
-  float: right;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-}
-.page_211 .mod_featuregallery_link,
-.page_211 .mod_featuregallery_text {
-  width: 75%;
-  float: right;
-}
-.page_211 .mod_featuregallery_picture {
-  width: 20%;
-  float: left;
 }
 .principal_p .mod_featuregallery {
   margin-top: 0;
@@ -1921,24 +1834,6 @@ b {
 .colored .d_bottom {
   border-bottom: 1px dotted #fff;
 }
-.videoWrapper {
-  position: relative;
-  padding-top: 25px;
-  height: 527px;
-}
-.videoWrapper iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 527px;
-}
-.videoWrapper iframe .gmnoprint {
-  display: none;
-}
-.cms_page_browsebutton {
-  width: 21px !important;
-}
 .botonera > div {
   display: list-item;
   list-style: inside;
@@ -2046,33 +1941,9 @@ b {
 .cms_featuregallery_menu {
   z-index: 9;
 }
-.nivo-controlNav a {
-  background: #fff;
-  border-radius: 35px;
-  color: #fff;
-  cursor: pointer;
-  font-size: 4px;
-  height: 10px;
-  margin: 0 5px;
-  width: 10px;
-  text-indent: -999999px;
-  padding: 0;
-  z-index: 10;
-  display: inline-block;
-}
-.nivo-controlNav a.active {
-  background-color: #000;
-  opacity: 0.4;
-}
 .principal_p .section_grey,
 .section_grey {
   background-color: #f0f0f0;
-}
-.nivo-controlNav {
-  text-align: center;
-  padding: 15px 0;
-  margin-top: -50px;
-  z-index: 999;
 }
 .txt_form {
   font-size: 20px;
@@ -2225,29 +2096,6 @@ b {
   width: 50%;
   border-top: 1px solid;
 }
-.familia h1,
-.mercado h1,
-.penal h1,
-.suelo h1 {
-  background-repeat: no-repeat;
-  background-size: 7%;
-  padding-bottom: 40px;
-  padding-top: 20px;
-  background-position: 0 24%;
-  padding-left: 59px;
-}
-.penal h1 {
-  background-image: url(../theme/derecho_penal.png);
-}
-.familia h1 {
-  background-image: url(../theme/divorcios.png);
-}
-.suelo h1 {
-  background-image: url(../theme/clausulas_suelo.png);
-}
-.mercado h1 {
-  background-image: url(../theme/derecho_sociedades.png);
-}
 .pink-text a:hover {
   text-decoration: none !important;
 }
@@ -2264,17 +2112,11 @@ b {
   border-bottom: 1px dashed #ccc;
   padding-bottom: 4px;
 }
-.page_197 h1 {
-  font-size: 27px;
-}
 .false h2 {
   background-image: none;
   padding-left: 0;
   font-size: 20px;
   padding-top: 0;
-}
-.page_197 .parallax h2 {
-  background-image: none !important;
 }
 .leermas {
   font-size: 23px;
@@ -2345,6 +2187,12 @@ li.menuitem_518.menuitem {
   margin-bottom: 20px;
 }
 
+.principal_p .ic_imagenes {
+  height: 123px;
+  margin-bottom: 20px;
+  background-size: contain;
+}
+
 .principal_p .mod_featuregallery_title {
   text-align: center;
   font-size: 16px;
@@ -2407,4 +2255,17 @@ li.menuitem_518.menuitem {
   font-weight: 600;
   padding: 0;
   border-bottom: 1px solid white;
+}
+
+.parallax {
+  height: auto;
+  background-attachment: fixed;
+  width: 100% !important;
+  background-size: 123% !important;
+  margin-bottom: 0px;
+  background-position: 50% -25% !important;
+}
+
+.parallax_big {
+  height: auto !important;
 }
