@@ -73,6 +73,9 @@ video#bgvid {
   margin-left: 32px;
   font-size: 20px;
 }
+.social_ico li i:hover {
+  color: rgba(255, 140, 245, 0.9);
+}
 .social_ico a {
   color: #fff;
 }
@@ -993,12 +996,16 @@ b {
   font-weight: 500;
 }
 .mod_mailform_label {
+  color: rgb(118, 0, 47) !important;
   font-size: 100%;
   line-height: 200%;
   font-weight: 600;
   margin-bottom: 0;
-  padding: 6px;
+  padding-left: 6px;
   text-align: left;
+}
+.mod_mailform_obligatorio {
+  font-weight: 400 !important;
 }
 .parallax .mod_mailform_label {
   color: #000;
@@ -1007,8 +1014,9 @@ b {
   /* text-transform: uppercase; */
   letter-spacing: 0.5px;
 }
-.mod_mailform_control {
+.centrado_padding {
   text-align: center;
+  padding-left: 12px;
 }
 .mod_mailform_subheader {
   font-weight: 700;
@@ -1047,14 +1055,15 @@ b {
   border: 0;
   color: #fff;
   font-family: Open Sans;
-  font-size: 90%;
+  font-size: 100%;
   font-weight: 500;
   padding: 10px;
   float: left;
   margin-top: 10px;
   cursor: pointer;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
+  border-radius: 15px;
 }
 .mod_mailform_submitfield button:hover {
   background-color: #000;
@@ -2114,9 +2123,9 @@ b {
   color: #fff;
 }
 .feature_home .mod_featuregallery_link a {
-  background-image: url(../img/genericas/pulsa-mano.png);
+  background-image: url(../img/genericas/mes-info.png);
   background-repeat: no-repeat;
-  background-position: 50% 30%;
+  background-position: 50% 100%;
   opacity: 0;
 }
 .feature_home .mod_featuregallery_link a:hover {
@@ -2390,12 +2399,12 @@ li.menuitem_518.menuitem {
   background-position: 50% 20% !important;
 }
 
-.formtitle {
-  color: white;
+.titulo_form {
+  color: rgb(118, 0, 47);
   text-align: center !important;
-  font-size: 29px;
-  text-shadow: 1px 1px 2px black;
+  font-size: 32px;
+  text-shadow: 2px 2px 3px white;
   font-weight: 600;
-  padding-bottom: 30px;
+  padding: 0;
   border-bottom: 1px solid white;
 }
