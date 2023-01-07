@@ -2136,16 +2136,6 @@ b {
   padding-top: 20px;
   margin-bottom: 20px;
 }
-.click {
-  margin-bottom: 20px;
-  width: 100%;
-  text-align: center;
-  color: #e2007a;
-  font-size: 140%;
-}
-.click:hover {
-  cursor: pointer;
-}
 .cajaoculta {
   display: none;
 }

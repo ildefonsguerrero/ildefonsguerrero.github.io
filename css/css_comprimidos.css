@@ -147,7 +147,7 @@
   bottom: 75%;
 }
 .slick-prev:before {
-  content: "<";
+  content: "";
 }
 .slick-next {
   right: 20px;
