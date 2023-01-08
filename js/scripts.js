@@ -319,7 +319,7 @@ $(document).ready(function () {
   "use strict";
   var o = $(".parallax");
   ($.onResize = function () {
-    "pc" === dispositivo && $.onScroll();
+    "gran" === tamany && $.onScroll();
   }),
     ($.onScroll = function () {
       var e,
@@ -341,7 +341,7 @@ $(document).ready(function () {
       );
     }),
     $(window).resize($.onResize),
-    "pc" === dispositivo && ($(window).scroll($.onScroll), $.onResize()),
+    "gran" === tamany && ($(window).scroll($.onScroll), $.onResize()),
     o.each(function (o) {
       $(this).css(
         "background-image",

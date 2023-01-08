@@ -1,4 +1,6 @@
-/*** slick.css ***/
+/**
+ * slick
+ **/
 
 .slick-list,
 .slick-slider,
@@ -250,7 +252,9 @@
   width: 90%;
 }
 
-/*** container_variations.css ***/
+/**
+ * tratamientos responsive
+ **/
 
 .navbar-toggle {
   background: rgba(0, 0, 0, 0);
