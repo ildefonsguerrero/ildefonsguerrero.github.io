@@ -2,6 +2,40 @@
  * propios
  **/
 $(document).ready(function () {
+  $("form").on("submit", function (event) {
+    event.preventDefault();
+    var url = "http://192.168.0.13:8001/sendMail/&acc=2gYG-9G.";
+
+    var correo = new Object();
+    correo.nombre = $("#f_nombre").val().trim();
+    correo.email = $("#f_email").val().trim();
+    correo.telef = $("#f_telef").val().trim();
+    correo.mensaje = $("#f_mensaje").val().trim();
+
+    $.ajax({
+      url: url,
+      type: "POST",
+      data: JSON.stringify(correo),
+      contentType: "application/json",
+      dataType: "json",
+      success: function (resp) {
+        alert("Mensaje enviado correctamente");
+        if (resp == "") {
+          console.log("por 1");
+          // para evitar que el "back" regrese a la encuesta
+          // history.replaceState(null, null, `/fi/&id=${idioma}`);
+          // mostramos la pantalla de fin
+          // window.location.replace(`/fi/&id=${idioma}`);
+          return false;
+        } else {
+          console.log("por 2");
+          // $("#msgerr").html(resp);
+          return false;
+        }
+      },
+    });
+  });
+
   $("#hmenu, .mod_navigation")
     .find(".haschildren")
     .each(function (e, s) {
