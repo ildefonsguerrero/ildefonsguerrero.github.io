@@ -22,14 +22,14 @@ $(document).ready(function () {
       success: function (resp) {
         alert("Mensaje enviado correctamente");
         if (resp == "") {
-          console.log("por 1");
+          // console.log("por 1");
           // para evitar que el "back" regrese a la encuesta
           // history.replaceState(null, null, `/fi/&id=${idioma}`);
           // mostramos la pantalla de fin
           // window.location.replace(`/fi/&id=${idioma}`);
           return false;
         } else {
-          console.log("por 2");
+          // console.log("por 2");
           // $("#msgerr").html(resp);
           return false;
         }
