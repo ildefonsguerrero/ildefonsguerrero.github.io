@@ -21,7 +21,6 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  -ms-touch-action: none;
   -webkit-tap-highlight-color: transparent;
 }
 .slick-list {
@@ -101,11 +100,7 @@
   height: auto;
   border: 1px solid transparent;
 }
-@font-face {
-  font-family: Roboto;
-  font-weight: 400;
-  font-style: normal;
-}
+
 .slick-next,
 .slick-prev {
   position: absolute;
@@ -141,7 +136,7 @@
   opacity: 1;
   text-shadow: 1px 1px 1px #000;
 }
-.responsive_1 .mod_featuregallery_link a:hover {
+.responsive_1 .contenedor_galeria_link a:hover {
   background-color: #e2007a;
 }
 .slick-prev {
@@ -158,19 +153,13 @@
 .slick-next:before {
   content: ">";
 }
-.website_columnsmall .slick-next {
+.sitio_columnapeq .slick-next {
   right: 2%;
   bottom: 0;
 }
-.website_columnsmall .slick-prev {
+.sitio_columnapeq .slick-prev {
   left: 80%;
   bottom: 0;
-}
-.news_mod .slick-next:before,
-.news_mod .slick-prev:before,
-.noticias_m .slick-next:before,
-.noticias_m .slick-prev:before {
-  transform: rotate(90deg);
 }
 .slick-slider {
   margin-bottom: 0;
@@ -246,11 +235,6 @@
 [dir="rtl"] .slick-slide {
   float: right;
 }
-.c_home .slick-list.draggable {
-  margin: 0 auto !important;
-  overflow: hidden;
-  width: 90%;
-}
 
 /**
  * tratamientos responsive
@@ -294,7 +278,7 @@
 #footer_content,
 .barra_arriba #contenido_barra,
 .contenido_arriba,
-.website_sectioncontent {
+.sitio_seccion_contenido {
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -304,7 +288,7 @@
   #footer_content,
   .barra_arriba #contenido_barra,
   .contenido_arriba,
-  .website_sectioncontent {
+  .sitio_seccion_contenido {
     width: 750px;
     padding: 0 !important;
   }
@@ -316,17 +300,17 @@
   #footer_content,
   .barra_arriba #contenido_barra,
   .contenido_arriba,
-  .website_sectioncontent {
+  .sitio_seccion_contenido {
     width: 970px;
   }
 }
 @media (min-width: 1200px) {
   #footer_content,
   .barra_arriba #contenido_barra,
-  .website_sectioncontent {
+  .sitio_seccion_contenido {
     width: 1170px;
   }
-  .feature_home {
+  .diseny_home {
     margin-top: -50px !important;
   }
 }
@@ -334,17 +318,16 @@
   #footer_content,
   .barra_arriba #contenido_barra,
   .contenido_arriba,
-  .website_sectioncontent {
+  .sitio_seccion_contenido {
     width: 94% !important;
     padding-left: 3%;
     padding-right: 3%;
   }
-  .mod_featuregallery_feature,
-  .website_columnbig,
-  .website_columnsmall,
-  .website_columntriplet,
-  .website_halfcolumn,
-  .website_menubase > li {
+  .contenedor_galeria_bloque,
+  .sitio_columnabig,
+  .sitio_columnapeq,
+  .sitio_columnatriplet,
+  .sitio_menu_base > li {
     width: 100% !important;
   }
   .navbar-toggle {
@@ -363,21 +346,7 @@
   .barra_arriba {
     display: none;
   }
-  .blog .mod_featuregallery_text {
-    text-align: center;
-    width: 80%;
-    font-size: 93%;
-    overflow: hidden;
-    margin: 0 auto;
-    min-height: 0;
-    font-weight: 500;
-  }
-  .blog > li:nth-child(10),
-  .blog > li:nth-child(9) {
-    width: 100% !important;
-    margin-left: 5px !important;
-  }
-  .feature_home {
+  .diseny_home {
     margin-top: 10px !important;
   }
 }
