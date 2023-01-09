@@ -1,13 +1,14 @@
 /**
  * propios
  **/
-$(document).ready(function () {
+$(function () {
   $("form").on("submit", function (event) {
     event.preventDefault();
-    // var url = "http://192.168.0.13:8001/sendMail/&acc=2gYG-9G.";
+    // var url = "http://192.168.0.14:8001/sendMail/&acc=2gYG-9G.";
     var url = "https://mailserver.ildeguerrero.repl.co/sendMail/&acc=2gYG-9G.";
 
-    https: var correo = new Object();
+    var correo = new Object();
+
     correo.nombre = $("#f_nombre").val().trim();
     correo.email = $("#f_email").val().trim();
     correo.telef = $("#f_telef").val().trim();
@@ -18,23 +19,17 @@ $(document).ready(function () {
       type: "POST",
       data: JSON.stringify(correo),
       contentType: "application/json",
-      dataType: "json",
       success: function (resp) {
         alert("Mensaje enviado correctamente");
-        if (resp == "") {
-          // console.log("por 1");
-          // para evitar que el "back" regrese a la encuesta
-          // history.replaceState(null, null, `/fi/&id=${idioma}`);
-          // mostramos la pantalla de fin
-          // window.location.replace(`/fi/&id=${idioma}`);
-          return false;
-        } else {
-          // console.log("por 2");
-          // $("#msgerr").html(resp);
-          return false;
-        }
+        return false;
       },
     });
+
+    // limpiamos los campos
+    $("#f_nombre").val("");
+    $("#f_email").val("");
+    $("#f_telef").val("");
+    $("#f_mensaje").val("");
   });
 
   $("#hmenu, .mod_navigation")
