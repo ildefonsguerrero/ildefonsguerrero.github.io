@@ -190,7 +190,7 @@
         <div class="sitio_secciones">
           <div class="sitio_seccion seccion_toda">
             <div class="sitio_seccion_contenido">
-              <div class="sitio_columna sitio_columna_tam_compl" index="0">
+              <div class="sitio_columna sitio_columna_tam_compl">
                 <div class="sitio_contenedor">
                   <div
                     class="cont_caja_imagen"
@@ -210,9 +210,9 @@
             </div>
             <div class="sitio_limpia"></div>
           </div>
-          <div class="sitio_seccion seccion_0">
+          <div class="sitio_seccion seccion_parte">
             <div class="sitio_seccion_contenido">
-              <div class="sitio_columna sitio_columna_tam_compl" index="0">
+              <div class="sitio_columna sitio_columna_tam_compl">
                 <div class="sitio_contenedor">
                   <ul class="contenedor_galeria diseny_home">
                     <li id="modo_galeria" class="contenedor_galeria_bloque">
@@ -289,7 +289,7 @@
           </div>
           <div class="sitio_seccion">
             <div class="sitio_seccion_contenido">
-              <div class="sitio_columna sitio_columna_tam_compl" index="0">
+              <div class="sitio_columna sitio_columna_tam_compl">
                 <div class="sitio_contenedor">
                   <div class="contenedor_texto" style="text-align: justify">
                     <div class="texto_container">
@@ -330,7 +330,7 @@
           </div>
           <div class="sitio_seccion seccion_gris">
             <div class="sitio_seccion_contenido">
-              <div class="sitio_columna sitio_columna_tam_compl" index="0">
+              <div class="sitio_columna sitio_columna_tam_compl">
                 <div class="sitio_contenedor">
                   <div class="conten_titulo">
                     <h2>Te ofrecemos</h2>
@@ -393,7 +393,7 @@
           </div>
           <div class="sitio_seccion parallax">
             <div class="sitio_seccion_contenido">
-              <div class="sitio_columna sitio_columna_tam_compl" index="0">
+              <div class="sitio_columna sitio_columna_tam_compl">
                 <div class="sitio_contenedor">
                   <div class="mod_link">
                     <a href="#contacte"
@@ -407,7 +407,7 @@
           </div>
           <div class="sitio_seccion">
             <div class="sitio_seccion_contenido">
-              <div class="sitio_columna sitio_columna_tam_compl" index="0">
+              <div class="sitio_columna sitio_columna_tam_compl">
                 <div class="sitio_contenedor">
                   <div class="conten_titulo">
                     <h2 style="margin-top: 20px">Lorem ipsum dolor sit amet</h2>
@@ -609,18 +609,12 @@
             </div>
             <div class="sitio_limpia"></div>
           </div>
-          <div class="sitio_seccion seccion_gris">
-            <style type="text/css">
-              .responsive_1 .contenedor_galeria_titulo a {
-                font-size: 15px;
-                font-weight: 700;
-              }
-            </style>
+          <div class="sitio_seccion seccion_gris secc_noticias">
             <div class="sitio_seccion_contenido">
-              <div class="sitio_columna sitio_columna_tam_compl" index="0">
+              <div class="sitio_columna sitio_columna_tam_compl">
                 <div class="sitio_contenedor">
                   <div class="conten_titulo sub_title">
-                    <h2 style="margin-top: 30px">Noticias</h2>
+                    <h2>Noticias</h2>
                   </div>
                 </div>
                 <div class="sitio_contenedor">
@@ -676,7 +670,7 @@
           </div>
           <div text-align:justify; class="sitio_seccion">
             <div class="sitio_seccion_contenido">
-              <div class="sitio_columna sitio_columna_tam_compl" index="0">
+              <div class="sitio_columna sitio_columna_tam_compl">
                 <div class="sitio_contenedor">
                   <div class="contenedor_texto" style="text-align: justify">
                     <div class="texto_container">
@@ -819,7 +813,7 @@
                 </div>
                 <div class="sitio_seccion parallax">
                   <div class="sitio_seccion_contenido">
-                    <div class="sitio_columna" index="1">
+                    <div class="sitio_columna">
                       <div class="sitio_contenedor">
                         <div class="contenedor_texto titulo_form">
                           <div class="texto_container">
@@ -829,9 +823,6 @@
                       </div>
                       <div class="sitio_contenedor">
                         <form action="" id="form" class="mod_mailform">
-                          <div class="mod_mailform_error">
-                            <div>error1</div>
-                          </div>
                           <ul class="mod_mailform_fieldlist">
                             <li class="mod_mailform_field">
                               <div class="mod_mailform_label">
@@ -845,7 +836,7 @@
                                 <input
                                   id="f_nombre"
                                   type="text"
-                                  class="entrada_formulario"
+                                  class="entrada_formulario entrada_formulario_tecleo"
                                   size="40"
                                   maxlength="40"
                                   value=""
@@ -864,7 +855,7 @@
                                 <input
                                   id="f_telef"
                                   type="number"
-                                  class="entrada_formulario"
+                                  class="entrada_formulario entrada_formulario_tecleo"
                                   size="40"
                                   maxlength="40"
                                   value=""
@@ -885,7 +876,7 @@
                                 <input
                                   id="f_email"
                                   type="email"
-                                  class="entrada_formulario"
+                                  class="entrada_formulario entrada_formulario_tecleo"
                                   size="40"
                                   maxlength="40"
                                   value=""
@@ -893,12 +884,16 @@
                               </div>
                             </li>
                             <li class="mod_mailform_field">
-                              <div class="mod_mailform_label">Mensaje</div>
+                              <div class="mod_mailform_label">
+                                Mensaje<span class="mod_mailform_mandatorystar"
+                                  >*</span
+                                >
+                              </div>
                               <div class="centrado_padding">
                                 <textarea
                                   id="f_mensaje"
                                   type="text"
-                                  class="entrada_formulario_txtarea"
+                                  class="entrada_formulario_txtarea entrada_formulario_tecleo"
                                   rows="10"
                                   cols="40"
                                 ></textarea>
@@ -920,6 +915,7 @@
                               </div>
                             </li>
                           </ul>
+                          <div class="mod_mailform_error"></div>
                         </form>
                       </div>
                     </div>
@@ -932,16 +928,8 @@
           <div class="footer" id="footer">
             <div id="footer_content">
               <div
-                index="0"
                 class="sitio_columna sitio_columnatriplet sitio_columnafirsttriplet"
               >
-                <p style="color: white">Ildefons Guerrero</p>
-                <div class="contenedor_texto">
-                  <li>
-                    <a class="f_item" href="#quiensoy">Nosotros</a>
-                  </li>
-                </div>
-
                 <p style="color: white" text-align:left>LEGAL</p>
                 <div class="contenedor_texto">
                   <li>
@@ -953,7 +941,6 @@
                 </div>
               </div>
               <div
-                index="1"
                 class="sitio_columna sitio_columnatriplet sitio_columnasecondtriplet"
               >
                 <p style="color: white">AYUDA</p>
@@ -970,7 +957,6 @@
                 </div>
               </div>
               <div
-                index="2"
                 class="sitio_columna sitio_columnatriplet sitio_columnathirdtriplet"
               >
                 <p style="color: white">CONTACTO</p>

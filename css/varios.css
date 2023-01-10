@@ -132,12 +132,12 @@
   width: 38px;
   height: 30px;
   line-height: 13px;
-  color: #e2007a;
+  color: #e3007b;
   opacity: 1;
   text-shadow: 1px 1px 1px #000;
 }
 .responsive_1 .contenedor_galeria_link a:hover {
-  background-color: #e2007a;
+  background-color: #e3007b;
 }
 .slick-prev {
   left: 5px;
@@ -334,7 +334,8 @@
     display: block;
   }
   #menu_grande,
-  #menu_peque {
+  #menu_peque,
+  .secc_noticias {
     display: none;
   }
   .slick {

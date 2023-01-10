@@ -2,6 +2,21 @@
  * propios
  **/
 $(function () {
+  /* coockies */
+  $("#cookie-message").show();
+  $("#cookie-message-content").show();
+
+  $("#cookie-message-close").click(function () {
+    $("#cookie-message").hide();
+    $("#cookie-message-content").hide();
+  });
+
+  // limpiamos mensaje de error si estuviera, ante un tecleo
+  $(".entrada_formulario_tecleo").focus(function () {
+    $(".mod_mailform_error").hide();
+  });
+
+  // tratamos envío del formulario
   $("form").on("submit", function (event) {
     event.preventDefault();
     // var url = "http://192.168.0.14:8001/sendMail/&acc=2gYG-9G.";
@@ -13,6 +28,36 @@ $(function () {
     correo.email = $("#f_email").val().trim();
     correo.telef = $("#f_telef").val().trim();
     correo.mensaje = $("#f_mensaje").val().trim();
+
+    if (correo.nombre === "") {
+      $(".mod_mailform_error")
+        .html("El nombre es obligatorio informarlo")
+        .show();
+      return;
+    }
+
+    if (correo.telef === "") {
+      $(".mod_mailform_error")
+        .html("El teléfono es obligatorio informarlo")
+        .show();
+      return;
+    } else if (correo.telef.length < 9) {
+      $(".mod_mailform_error")
+        .html("El número de teléfono es incorrecto")
+        .show();
+      return;
+    }
+
+    if (correo.email === "") {
+      $(".mod_mailform_error")
+        .html("El correo electrónico es obligatorio")
+        .show();
+      return;
+    }
+    if (correo.mensaje === "") {
+      $(".mod_mailform_error").html("No se ha informado ningún mensaje").show();
+      return;
+    }
 
     $.ajax({
       url: url,
