@@ -19,8 +19,8 @@ $(function () {
   // tratamos envío del formulario
   $("form").on("submit", function (event) {
     event.preventDefault();
-    // var url = "http://192.168.0.14:8001/sendMail/&acc=2gYG-9G.";
-    var url = "https://mailserver.ildeguerrero.repl.co/sendMail/&acc=2gYG-9G.";
+    var url = "http://192.168.0.13:8001/sendMail/&acc=2gYG-9G.";
+    // var url = "https://mailserver.ildeguerrero.repl.co/sendMail/&acc=2gYG-9G.";
 
     var correo = new Object();
 

@@ -290,7 +290,7 @@
   .contenido_arriba,
   .sitio_seccion_contenido {
     width: 750px;
-    padding: 0 !important;
+    /* padding: 0 !important; */
   }
   #menu_peque {
     display: none !important;
@@ -343,9 +343,6 @@
   }
   .no_slick {
     display: block !important;
-  }
-  .barra_arriba {
-    display: none;
   }
   .diseny_home {
     margin-top: 10px !important;
