@@ -1,6 +1,13 @@
 /**
  * propios
  **/
+// !function (e) {
+//   "use strict";
+//   e(window).load(function () {
+//     e(".loader-inner").fadeOut(), e(".loader").delay(200).fadeOut("slow");
+//   });
+// };
+
 $(function () {
   /* coockies */
   $("#cookie-message").show();
@@ -19,8 +26,8 @@ $(function () {
   // tratamos envío del formulario
   $("form").on("submit", function (event) {
     event.preventDefault();
-    var url = "http://192.168.0.13:8001/sendMail/&acc=2gYG-9G.";
-    // var url = "https://mailserver.ildeguerrero.repl.co/sendMail/&acc=2gYG-9G.";
+    // var url = "http://192.168.0.13:8001/sendMail/&acc=2gYG-9G.";
+    var url = "https://mailserver.ildeguerrero.repl.co/sendMail/&acc=2gYG-9G.";
 
     var correo = new Object();
 
@@ -58,6 +65,9 @@ $(function () {
       $(".mod_mailform_error").html("No se ha informado ningún mensaje").show();
       return;
     }
+
+    // $(".loader-inner").fadeOut();
+    // $(".loader").delay(200).fadeOut("slow");
 
     $.ajax({
       url: url,
