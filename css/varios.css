@@ -289,9 +289,26 @@
   .barra_arriba #contenido_barra,
   .contenido_arriba,
   .sitio_seccion_contenido {
-    width: 750px;
-    /* padding: 0 !important; */
+    width: 100%;
+    padding: 0 !important;
   }
+  .contenedor_logo {
+    margin: 0;
+    text-align: left;
+    padding-left: 5%;
+  }
+  .cabecera_inf {
+    text-align: left;
+    float: right;
+    margin-right: 5%;
+    margin-top: -90px;
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 700;
+    margin-left: 24px;
+    /* padding-right: 15%; */
+  }
+
   #menu_peque {
     display: none !important;
   }
@@ -302,6 +319,14 @@
   .contenido_arriba,
   .sitio_seccion_contenido {
     width: 970px;
+  }
+  .contenedor_logo {
+    padding-left: 15%;
+  }
+  .cabecera_inf {
+    margin-right: 15%;
+    padding: 10px;
+    border-radius: 5px;
   }
 }
 @media (min-width: 1200px) {
@@ -368,7 +393,6 @@
   }
   .contenedor_logo {
     margin: 20px 0;
-    text-align: left;
-    padding-left: 0%;
+    text-align: center;
   }
 }
