@@ -1,5 +1,4 @@
 $(function () {
-  //   $("#cookie-captchaBackground").hide();
   let captchaText = document.querySelector("#captcha");
   var ctx = captchaText.getContext("2d");
   ctx.font = "30px Roboto";

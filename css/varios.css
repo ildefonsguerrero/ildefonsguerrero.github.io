@@ -393,7 +393,8 @@
     display: none;
   }
   .contenedor_logo {
-    margin: 20px 0;
-    text-align: center;
+    margin-top: 20px;
+    margin-left: -52px;
+    text-align: left;
   }
 }
