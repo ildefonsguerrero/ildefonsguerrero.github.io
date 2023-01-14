@@ -82,7 +82,7 @@
   </head>
   <body>
     <!-- Preloader -->
-    <div class="loader">
+    <div class="loader" hidden>
       <!-- Preloader inner -->
       <div class="loader-inner">
         <div class="spinner">
@@ -353,62 +353,58 @@
           <div class="sitio_seccion seccion_gris">
             <div class="sitio_seccion_contenido">
               <div class="sitio_columna">
-                <div class="sitio_contenedor">
-                  <div class="conten_titulo">
-                    <h2>Te ofrecemos</h2>
-                  </div>
+                <div class="conten_titulo">
+                  <h2>Te ofrecemos</h2>
                 </div>
-                <div class="sitio_contenedor">
-                  <ul class="contenedor_galeria carac_icono">
-                    <li class="contenedor_galeria_bloque">
-                      <div
-                        class="contenedor_galeria_img ic_imagenes"
-                        style="
-                          background-image: url('img/index/iconos/ic_euro.png');
-                          background-position: 0px -41px;
-                        "
-                      ></div>
-                      <div class="contenedor_galeria_titulo">
-                        Precios ajustados
-                      </div>
-                    </li>
-                    <li class="contenedor_galeria_bloque">
-                      <div
-                        class="contenedor_galeria_img ic_imagenes"
-                        style="
-                          background-image: url('img/index/iconos/ic_calendar.png');
-                          background-position: 0px -41px;
-                        "
-                      ></div>
-                      <div class="contenedor_galeria_titulo">
-                        Alta disponibilidad
-                      </div>
-                    </li>
-                    <li class="contenedor_galeria_bloque">
-                      <div
-                        class="contenedor_galeria_img ic_imagenes"
-                        style="
-                          background-image: url('img/index/iconos/ic_books.png');
-                          background-position: 0px -41px;
-                        "
-                      ></div>
-                      <div class="contenedor_galeria_titulo">
-                        Gran experiencia
-                      </div>
-                    </li>
+                <ul class="contenedor_galeria carac_icono">
+                  <li class="contenedor_galeria_bloque">
+                    <div
+                      class="contenedor_galeria_img ic_imagenes"
+                      style="
+                        background-image: url('img/index/iconos/ic_euro.png');
+                        background-position: 0px -41px;
+                      "
+                    ></div>
+                    <div class="contenedor_galeria_titulo">
+                      Precios ajustados
+                    </div>
+                  </li>
+                  <li class="contenedor_galeria_bloque">
+                    <div
+                      class="contenedor_galeria_img ic_imagenes"
+                      style="
+                        background-image: url('img/index/iconos/ic_calendar.png');
+                        background-position: 0px -41px;
+                      "
+                    ></div>
+                    <div class="contenedor_galeria_titulo">
+                      Alta disponibilidad
+                    </div>
+                  </li>
+                  <li class="contenedor_galeria_bloque">
+                    <div
+                      class="contenedor_galeria_img ic_imagenes"
+                      style="
+                        background-image: url('img/index/iconos/ic_books.png');
+                        background-position: 0px -41px;
+                      "
+                    ></div>
+                    <div class="contenedor_galeria_titulo">
+                      Gran experiencia
+                    </div>
+                  </li>
 
-                    <li class="contenedor_galeria_bloque">
-                      <div
-                        class="contenedor_galeria_img ic_imagenes"
-                        style="
-                          background-image: url('img/index/iconos/ic_ok.png');
-                          background-position: 0px -41px;
-                        "
-                      ></div>
-                      <div class="contenedor_galeria_titulo">Resultados</div>
-                    </li>
-                  </ul>
-                </div>
+                  <li class="contenedor_galeria_bloque">
+                    <div
+                      class="contenedor_galeria_img ic_imagenes"
+                      style="
+                        background-image: url('img/index/iconos/ic_ok.png');
+                        background-position: 0px -41px;
+                      "
+                    ></div>
+                    <div class="contenedor_galeria_titulo">Resultados</div>
+                  </li>
+                </ul>
               </div>
             </div>
             <div class="sitio_limpia"></div>
@@ -936,16 +932,18 @@
                                 <button type="submit">Enviar mensaje</button>
                               </div>
 
-                              <div id="captchaBackground" hidden>
-                                <canvas id="captcha">captcha text</canvas>
-                                <input id="textBox" type="text" name="text" />
-                                <div id="buttons">
-                                  <input id="submitButton" type="submit" />
-                                  <button id="refreshButton" type="submit">
-                                    Refresca
-                                  </button>
+                              <div hidden>
+                                <div id="captchaBackground">
+                                  <canvas id="captcha">captcha text</canvas>
+                                  <input id="textBox" type="text" name="text" />
+                                  <div id="buttons">
+                                    <input id="submitButton" type="submit" />
+                                    <button id="refreshButton" type="submit">
+                                      Refresca
+                                    </button>
+                                  </div>
+                                  <span id="output"></span>
                                 </div>
-                                <span id="output"></span>
                               </div>
                             </li>
                           </ul>

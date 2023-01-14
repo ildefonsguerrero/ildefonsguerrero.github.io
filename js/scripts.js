@@ -9,7 +9,6 @@
 // };
 
 $(function () {
-  document.getElementById("captchaBackground").style.display = "none";
   /* coockies */
 
   $("#cookie-message").show();

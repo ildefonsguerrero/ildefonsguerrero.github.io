@@ -375,8 +375,8 @@ a {
   text-align: center;
 }
 .barra_arriba {
-  background-color: #2b2b2b;
-  border-bottom: 1px solid #888d93;
+  background-color: #52002d;
+  border-bottom: 1px solid #a0a8b1;
   left: 0;
   position: relative;
   top: 0;
@@ -1311,8 +1311,9 @@ b {
   text-shadow: 1px 1px 1px #000;
 }
 .principal_p .seccion_gris {
-  margin-top: -50px;
+  margin-top: 0px;
   padding-top: 30px;
+  padding-bottom: 24px;
 }
 .diseny_home .contenedor_galeria_bloque {
   background-color: #000;
@@ -1390,7 +1391,7 @@ b {
 
 .principal_p .ic_imagenes {
   height: 123px;
-  margin-bottom: 20px;
+  margin-bottom: 6px;
   background-size: contain;
 }
 
@@ -1411,15 +1412,10 @@ b {
 .carac_icono .contenedor_galeria_bloque {
   display: inline-block;
   zoom: 1;
-  width: 17.6%;
+  width: 18%;
   vertical-align: top;
   text-align: center;
-  margin: 0 10px 10px;
-}
-
-.principal_p .seccion_gris {
-  margin-top: 0px;
-  padding-top: 30px;
+  margin: 0 10px 0 0;
 }
 
 .contenedor_logo {
@@ -1443,7 +1439,7 @@ b {
 }
 
 #modo_galeria .contenedor_galeria_img {
-  background-position: 50% 20% !important;
+  background-position: 50% 20%;
 }
 
 .titulo_form {

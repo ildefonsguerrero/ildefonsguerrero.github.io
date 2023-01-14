@@ -349,7 +349,12 @@
     padding-left: 3%;
     padding-right: 3%;
   }
-  .contenedor_galeria_bloque,
+  /* .diseny_home {
+    margin-left: -12px;
+  } */
+  .contenedor_galeria_bloque {
+    width: 90% !important;
+  }
   .sitio_columnabig,
   .sitio_columnapeq,
   .sitio_columna_footer,
@@ -383,13 +388,13 @@
 
 @media (max-width: 768px) {
   .cabecera_inf {
-    text-align: left;
+    /* text-align: left;
     float: right;
     margin-top: -90px;
     font-size: 20px;
     line-height: 1;
     font-weight: 700;
-    padding-right: 15%;
+    padding-right: 15%; */
     display: none;
   }
   .contenedor_logo {
