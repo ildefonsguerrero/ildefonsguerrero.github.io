@@ -554,10 +554,9 @@ a {
   overflow: hidden;
   padding: 0 1.15%;
   width: 31.8%;
+  padding: 0;
 }
-.sitio_columna_footer_2 {
-  padding-left: 0;
-}
+
 .seccion_toda .sitio_seccion_contenido {
   width: 100%;
   max-width: none;
